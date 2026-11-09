@@ -1,0 +1,13 @@
+node_modules/
+dist/
+runs/
+backups/
+.env
+.env.*
+!.env.example
+*.log
+coverage/
+private-config/
+private-sessions/
+*.key
+*.pem
