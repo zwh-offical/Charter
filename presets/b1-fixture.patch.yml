@@ -1,0 +1,5 @@
+- id: compaction-basic
+  disabled: true
+- insert:
+    - id: charter-compaction
+      name: ../dist/packages/charter-compaction/src/index.js

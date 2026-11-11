@@ -1,0 +1,9 @@
+{"phase":"first-v1","type":"request","snapshots":[1],"status":200,"tools":0}
+{"phase":"first-v1","type":"request","snapshots":[],"status":200,"tools":0}
+{"phase":"first-v1","type":"turn","session":"session-62645986-e96a-46ad-bfc7-5e84a23da8ca","result":"completed"}
+{"phase":"first-v2","type":"request","snapshots":[1,2],"status":200,"tools":0}
+{"phase":"first-v2","type":"turn","session":"session-62645986-e96a-46ad-bfc7-5e84a23da8ca","result":"completed"}
+{"phase":"second-control","type":"request","snapshots":[],"status":200,"tools":0}
+{"phase":"second-control","type":"request","snapshots":[],"status":200,"tools":0}
+{"phase":"second-control","type":"turn","session":"session-18241a0e-da58-476b-8be6-d3cdd7a8113e","result":"completed"}
+{"phase":"headless-followup","type":"request","snapshots":[1,2,2],"status":200,"tools":0}

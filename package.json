@@ -1,24 +1,103 @@
 {
-  "name": "charter",
-  "version": "0.0.0",
-  "private": true,
+  "name": "@zwh-offical/charter-dsh",
+  "version": "1.0.0-rc.2",
+  "license": "SEE LICENSE IN LICENSE",
   "type": "module",
   "engines": {
-    "node": ">=24.9.0"
+    "node": ">=24.9.0",
+    "dsh": "0.2.2-rc.1"
   },
   "scripts": {
     "build": "tsc -p tsconfig.json",
-    "test": "vitest run",
-    "typecheck": "tsc -p tsconfig.json --noEmit"
+    "audit": "node dist/packages/charter-audit/src/cli.js",
+    "test": "vitest run --exclude dist/**",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "prepack": "node node_modules/typescript/bin/tsc -p tsconfig.json"
   },
   "devDependencies": {
     "@deepseek-ai/cordis": "4.1.0",
+    "@deepseek-ai/dsh-agent": "0.2.2-rc.1",
     "@deepseek-ai/dsh-attachment": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-commands": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-compaction": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-llm": "0.2.2-rc.1",
     "@deepseek-ai/dsh-package-manifest": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-session": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-session-persistence": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-session-projection": "0.2.2-rc.1",
     "@deepseek-ai/dsh-system-prompt": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-token-meter": "0.2.2-rc.1",
+    "@deepseek-ai/schemastery": "3.19.0",
     "@types/node": "24.10.1",
     "tsx": "4.20.6",
     "typescript": "5.9.3",
     "vitest": "4.0.8"
+  },
+  "main": "./dist/packages/charter-compaction/src/index.js",
+  "exports": {
+    ".": "./dist/packages/charter-compaction/src/index.js",
+    "./provider": "./dist/packages/charter-compaction/src/research-provider.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./charter-enable.patch.yml": "./charter-enable.patch.yml"
+  },
+  "files": [
+    "dist/packages",
+    "cordis.patch.yml",
+    "docs/DSH_PLUGIN_INSTALL.md",
+    "docs/COMMERCIAL_LICENSING.md",
+    "LICENSE",
+    "README.md",
+    "charter-enable.patch.yml"
+  ],
+  "dsh": {
+    "manifestVersion": 1,
+    "bundle": {
+      "patch": "./cordis.patch.yml",
+      "listedByDefault": false
+    }
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "4.1.0",
+    "@deepseek-ai/dsh-agent": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-commands": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-compaction": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-llm": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-session": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-session-persistence": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-system-prompt": "0.2.2-rc.1",
+    "@deepseek-ai/dsh-token-meter": "0.2.2-rc.1",
+    "@deepseek-ai/schemastery": "3.19.0"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/cordis": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-agent": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-commands": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-compaction": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-llm": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-session": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-session-persistence": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-system-prompt": {
+      "optional": true
+    },
+    "@deepseek-ai/dsh-token-meter": {
+      "optional": true
+    },
+    "@deepseek-ai/schemastery": {
+      "optional": true
+    }
   }
 }

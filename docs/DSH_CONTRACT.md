@@ -82,4 +82,10 @@ The following are source-supported but still require P0-04 runtime evidence: age
 
 ## Gate conclusion
 
-Source-level compatibility is plausible. Gate A remains blocked until P0-03 and P0-04 produce real persisted evidence. No B1 transaction code should be treated as ready before that evidence exists.
+The original contract notes above predate the Windows runtime verification.
+See `RESULTS.md` for observed B0, B1 and next-request evidence and
+`GATE_A.md` for the formal isolated-lab status.
+
+The Windows runtime verification adds real persisted and provider-request
+evidence to these source contracts. Gate A remains open for the isolated
+formal experiment.

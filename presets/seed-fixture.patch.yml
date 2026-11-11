@@ -1,0 +1,3 @@
+- insert:
+    - id: charter-fixture-driver
+      name: ./seed-fixture.mjs

@@ -1,0 +1,7 @@
+{"stage":"v1","type":"provider-request","status":200,"model":"deepseek-flash","tools":0,"userV1":1,"userV2":0,"systemV1":0,"systemV2":0,"snapshots":[{"index":0,"role":"user","version":1}],"sectionInSystem":1,"sectionInMessages":0}
+{"stage":"v2","type":"provider-request","status":200,"model":"deepseek-flash","tools":0,"userV1":1,"userV2":1,"systemV1":0,"systemV2":0,"snapshots":[{"index":0,"role":"user","version":1},{"index":2,"role":"user","version":2}],"sectionInSystem":1,"sectionInMessages":0}
+{"stage":"compact","type":"provider-request","status":200,"model":"deepseek-flash","tools":0,"userV1":1,"userV2":1,"systemV1":0,"systemV2":0,"snapshots":[{"index":0,"role":"user","version":1},{"index":2,"role":"user","version":2}],"sectionInSystem":1,"sectionInMessages":0}
+{"stage":"compact","type":"compact","before":7,"after":3,"result":{"kind":"success","text":"Compacted 5 history items (~2807 tokens).","sourceEventSeq":39}}
+{"stage":"compact","type":"provider-request","status":200,"model":"deepseek-flash","tools":0,"userV1":1,"userV2":2,"systemV1":0,"systemV2":0,"snapshots":[{"index":2,"role":"user","version":2}],"sectionInSystem":1,"sectionInMessages":1}
+{"stage":"control","type":"provider-request","status":200,"model":"deepseek-flash","tools":0,"userV1":0,"userV2":0,"systemV1":0,"systemV2":0,"snapshots":[],"sectionInSystem":0,"sectionInMessages":0}
+{"stage":"control","type":"provider-request","status":200,"model":"deepseek-flash","tools":0,"userV1":0,"userV2":0,"systemV1":0,"systemV2":0,"snapshots":[],"sectionInSystem":0,"sectionInMessages":0}

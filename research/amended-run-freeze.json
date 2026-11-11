@@ -1,0 +1,16 @@
+{
+  "frozenAt": "2026-11-09T13:39:49.0969174Z",
+  "sourceBundleSha256": "f0f298a4dbec618500b692f7ab0c960f30b2c617accff3841577c9c6934c09f5",
+  "node": "24.22.1",
+  "dsh": "0.2.2-rc.1",
+  "model": "deepseek-official/deepseek-flash",
+  "concurrency": 4,
+  "files": {
+    "research/protocol.md": "f4c7a42b1f64da9887b4aac19875becb285f2dd882fadb366c928125ba621456",
+    "research/amendments.md": "7e2a6e4c4a29d19844c9b3b7a0cb3ee6847ece7640af67b12c5eb184475dc7bc",
+    "research/scenarios.json": "1fa2506377e60fccfb2c7440b88ddce523a981aa3d841e8a90073b1f9af9c464",
+    "research/make-fixture.mjs": "ec72af0bdfab8cfc28d039a557d12e5b1e9acd3a0da9a2f29bdba59982362dbc",
+    "research/wsl/wsl-formal-run.mjs": "c3fd8a250985e3f5cc02e3845cb7e62cedf7ae9926cb4e8bf8f3a0b854eb1d15",
+    "research/wsl/wsl-formal-matrix.sh": "a9bfaa124790236bbefb66ae73f10cbab5888f44a701951a32696536232da140"
+  }
+}
