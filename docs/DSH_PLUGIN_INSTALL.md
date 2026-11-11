@@ -17,6 +17,22 @@ $package = Join-Path $env:DSH_HOME 'profiles/headless/node_modules/@zwh-offical/
 dsh headless --patch (Join-Path $package 'charter-enable.patch.yml') --dump-config
 ```
 
+
+## Windows Desktop: install the Release tarball / 安装桌面版插件
+
+Download the [`.tgz` asset](https://github.com/zwh-offical/Charter/releases/download/v1.0.0-rc.2/zwh-offical-charter-dsh-1.0.0-rc.2.tgz) and keep it intact. Fully quit DSH Desktop, then run the following in PowerShell, adjusting the paths if needed. Reopen DSH afterward.
+
+下载上面的 `.tgz` 附件，不要解压。完全退出 DSH 桌面版，再在 PowerShell 执行下列命令；按实际路径修改，完成后重新打开 DSH。
+
+```powershell
+& 'D:/software/deepseek/resources/runtime/cli/bin/dsh.cmd' plugin --profile desktop add "$env:USERPROFILE/Downloads/zwh-offical-charter-dsh-1.0.0-rc.2.tgz"
+```
+
+Use the Release asset rather than the repository URL or GitHub's source archives. A Git install invokes a source build and can fail with `ERR_PNPM_PREPARE_PACKAGE` when `npm` is unavailable to Desktop. Installing the prebuilt asset skips that step. Installation keeps stock compaction; activation is a separate step.
+
+请使用 Release 安装包。仓库地址和 GitHub 自动生成的源码包需要从源码构建；桌面环境找不到 `npm` 时会出现上述错误。预构建包跳过该步骤。安装后仍保留原生压缩，需要另行启用 Charter。
+
+
 To try the zero-configuration Charter backend explicitly, use the packaged
 `cordis.patch.yml` as a DSH `--patch` argument. This disables the stock
 backend for that invocation and installs the excerpt-based Charter backend.
