@@ -39,6 +39,8 @@ npm run build
 
 ### 架构与实测
 
+[开发与维护交接](docs/DEVELOPER_HANDOVER.md#中文)
+
 延伸阅读：[别让 Agent 在压缩后忘记约束](docs/charter-intro.md#中文)。
 
 [压缩插件](packages/charter-compaction/src)处理约束、摘要和持久化验证；[审计工具](packages/charter-audit/src)读取独立证据；[WSL 宿主实验](research/wsl)验证受控执行边界。
@@ -71,6 +73,8 @@ The plugin requires Node.js `>=24.9.0`. It was tested on desktop DSH `0.2.2-rc.1
 To build from source, run `npm ci`, `npm test`, `npm run typecheck`, and `npm run build`. For host isolation experiments on Windows, install Ubuntu from the Microsoft Store and use WSL 2. Install Bubblewrap in the Linux environment. See the [reproduction guide](docs/REPRODUCE.md).
 
 ### Architecture and evidence
+
+[Developer and maintenance handover](docs/DEVELOPER_HANDOVER.md#english)
 
 Read more: [When agents forget constraints after compaction](docs/charter-intro.md#english).
 
