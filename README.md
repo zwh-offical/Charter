@@ -2,6 +2,8 @@
 
 **1.0.0-rc.2 · DSH Plugin Research Preview** · [中文](#中文) · [English](#english)
 
+[下载插件 / Download](https://github.com/zwh-offical/Charter/releases/download/v1.0.0-rc.2/zwh-offical-charter-dsh-1.0.0-rc.2.tgz) · [安装指南 / Installation](docs/DSH_PLUGIN_INSTALL.md) · [技术文章 / Technical article](docs/charter-intro.md)
+
 源码可见：个人非商业使用免费，分享时须保留署名；商业使用须另行授权。见 [许可证](LICENSE)。  
 Source available: free for personal noncommercial use, with attribution when sharing; commercial use requires a separate license. See [LICENSE](LICENSE).
 
