@@ -20,6 +20,18 @@ dsh headless --patch (Join-Path $package 'charter-enable.patch.yml') --dump-conf
 
 ## Windows Desktop: install the Release tarball / 安装桌面版插件
 
+### Install by URL / 链接安装
+
+Copy the following Release asset URL into **Plugins → Add plugin** and select **Install**. If your desktop version does not accept tarball URLs in the dialog, use the PowerShell steps below. The URL was verified through the DSH desktop profile installer on Windows; the dialog itself was not tested.
+
+在 **插件 → 添加插件** 粘贴下面的 Release 安装包链接，再点 **安装**。已用 Windows 版 DSH 的桌面配置安装器验证该链接；图形界面本身尚未验证。如果输入框不接受该链接，请用下方的 PowerShell 步骤。
+
+```text
+https://github.com/zwh-offical/Charter/releases/download/v1.0.0-rc.2/zwh-offical-charter-dsh-1.0.0-rc.2.tgz
+```
+
+### Install from a downloaded file / 从本地文件安装
+
 Download the [`.tgz` asset](https://github.com/zwh-offical/Charter/releases/download/v1.0.0-rc.2/zwh-offical-charter-dsh-1.0.0-rc.2.tgz) and keep it intact. Fully quit DSH Desktop, then run the following in PowerShell, adjusting the paths if needed. Reopen DSH afterward.
 
 下载上面的 `.tgz` 附件，不要解压。完全退出 DSH 桌面版，再在 PowerShell 执行下列命令；按实际路径修改，完成后重新打开 DSH。
